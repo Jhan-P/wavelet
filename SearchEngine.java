@@ -29,7 +29,7 @@ class Handler implements URLHandler {
             if (parameters[0].equals("s")) {
                 for(String word: list){
                     if(word.contains(parameters[1])){
-                        result += word;
+                        result += " " + word;
                     }
                 }
                 return result;
