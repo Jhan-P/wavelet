@@ -41,7 +41,7 @@ class Handler implements URLHandler {
             return "404 Not Found!";
         }
     }
-}
+
 
 class SearchEngine {
     public static void main(String[] args) throws IOException {
