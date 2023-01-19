@@ -23,6 +23,7 @@ class Handler implements URLHandler {
                     return String.format("%s added to the list", query);
                 }
             }
+        }
         else if (url.getPath().contains("/search")) {
             String result = "";
             String[] parameters = url.getQuery().split("=");
