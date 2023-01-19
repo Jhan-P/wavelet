@@ -9,9 +9,9 @@ class Handler implements URLHandler {
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
-            return String.format("Jhan and Will's number: %d", num);
+            return String.format("List: %s", list);
         } else if (url.getPath().equals("/increment")) {
-            num += 1;
+            //num += 1;
             return String.format("Number incremented!");
         } else {
             System.out.println("Path: " + url.getPath());
