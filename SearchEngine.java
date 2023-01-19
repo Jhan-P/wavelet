@@ -13,7 +13,7 @@ class Handler implements URLHandler {
         } else if (url.getPath().equals("/increment")) {
             num += 1;
             return String.format("Number incremented!");
-        } else if{
+        } else {
             System.out.println("Path: " + url.getPath());
             if (url.getPath().contains("/add")) {
                 String[] parameters = url.getQuery().split("=");
@@ -23,8 +23,7 @@ class Handler implements URLHandler {
                     return String.format("%s added to the list", query);
                 }
             }
-        }
-        else if (url.getPath().contains("/search")) {
+            else if (url.getPath().contains("/search")) {
             String result = "";
             String[] parameters = url.getQuery().split("=");
             if (parameters[0].equals("s")) {
@@ -37,6 +36,8 @@ class Handler implements URLHandler {
             }
             
         }
+        }
+        
             return "404 Not Found!";
         }
     }
